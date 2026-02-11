@@ -1,0 +1,99 @@
+/* ============================================
+   Base Styles - Reset and Typography
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-white);
+  color: var(--color-text-dark);
+  line-height: var(--line-height-normal);
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-text-dark);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  letter-spacing: -0.2px;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-text-dark);
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  color: var(--color-text-lightest);
+}
+
+.text-muted {
+  color: var(--color-text-lightest);
+  font-size: var(--font-size-small);
+}

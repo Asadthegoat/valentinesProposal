@@ -1,0 +1,75 @@
+/* ============================================
+   CSS Variables - Color, Typography, Spacing
+   ============================================ */
+
+:root {
+  /* Color Palette - Earthy Romance Theme */
+  /* Dusty Rose - primary romantic color */
+  --color-primary: #cc8b8c;
+  /* Blackberry Cream - deep sophisticated dark */
+  --color-primary-dark: #4a2545;
+  /* Wisteria - light lilac romantic accent */
+  --color-primary-light: #d9a8c3;
+  /* Wisteria - purple accent */
+  --color-accent: #c69dd2;
+  /* Ash Grey - very light neutral */
+  --color-accent-light: #e8d9f0;
+  
+  /* Iron Grey - primary text color */
+  --color-text-dark: #404e4d;
+  /* Iron Grey lighter - secondary text */
+  --color-text-light: #6a7776;
+  /* Ash Grey blend - lightest text */
+  --color-text-lightest: #a0aba8;
+  
+  --color-bg-white: #faf8f7;
+  /* Ash Grey - warm cream background */
+  --color-bg-cream: #ccd7c5;
+  
+  --color-penguin: #2c3e50;
+  --color-penguin-accent: #c69dd2;
+  
+  /* Typography */
+  --font-serif: 'Georgia', 'Garamond', serif;
+  --font-sans: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  
+  /* Line Height */
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  
+  /* Shadows - Soft and subtle */
+  --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-fast: 300ms ease-in-out;
+  --transition-normal: 500ms ease-in-out;
+  --transition-slow: 800ms ease-in-out;
+}

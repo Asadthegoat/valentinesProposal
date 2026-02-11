@@ -1,0 +1,159 @@
+/* ============================================
+   Animations & Transitions
+   ============================================ */
+
+/* Intro reveal animation */
+@keyframes introReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.intro-content {
+  animation: introReveal var(--transition-normal) ease-out;
+}
+
+/* Yes button growth animation */
+@keyframes growButton {
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn-yes.growing {
+  transform-origin: center;
+  animation: growButton var(--transition-fast) ease-out;
+}
+
+/* Fade In on Scroll Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp var(--transition-normal) ease-out forwards;
+}
+
+.fade-in-up-stagger-1 {
+  animation: fadeInUp var(--transition-normal) ease-out forwards;
+  animation-delay: 100ms;
+}
+
+.fade-in-up-stagger-2 {
+  animation: fadeInUp var(--transition-normal) ease-out forwards;
+  animation-delay: 200ms;
+}
+
+.fade-in-up-stagger-3 {
+  animation: fadeInUp var(--transition-normal) ease-out forwards;
+  animation-delay: 300ms;
+}
+
+/* Gentle Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-slow) ease-out forwards;
+}
+
+/* Subtle Scale On Hover */
+.hover-lift {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Smooth Color Transition */
+.transition-colors {
+  transition: color var(--transition-fast), 
+              background-color var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+/* Penguin Found Celebration */
+@keyframes penguinFound {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(0) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.penguin-found-animation {
+  animation: penguinFound 600ms ease-out forwards;
+}
+
+/* Secret Section Reveal */
+@keyframes secretReveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.secret-reveal-animation {
+  animation: secretReveal var(--transition-slow) ease-out;
+}
+
+/* Pulse Animation for Hidden Penguin Hint */
+@keyframes subtlePulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.subtle-pulse {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+/* Letter Appearance */
+.letter-content {
+  animation: fadeInUp var(--transition-normal) ease-out;
+}
+
+/* Hero Content */
+.hero-content {
+  animation: fadeIn var(--transition-slow) ease-out;
+}
+
+/* No animation on initial page load for :initial pseudo-class simulation */
+.js-loaded .fade-in-up {
+  animation: fadeInUp var(--transition-normal) ease-out forwards;
+}
+
+.js-loaded .fade-in {
+  animation: fadeIn var(--transition-slow) ease-out forwards;
+}
